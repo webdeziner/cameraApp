@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Camera</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+    <ion-card>
+        <ion-card-content>
+            <button block primary (click)="snap($event)">Take picture</button>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            Last picture
+        </ion-card-header>
+        <ion-card-content>
+            <img [src]="photo" *ngIf="photo">
+        </ion-card-content>
+    </ion-card>
+</ion-content>
